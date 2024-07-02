@@ -1,0 +1,309 @@
+body {
+    font-family: 'Arial';
+    background-color: white;
+    padding: 20px;
+}
+
+.pricing-table {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
+    border-radius: 20px;
+    padding-left: 28px;
+    padding-right: 28px;
+    width: 25%;
+    height: auto;
+}
+
+#enterprise {
+    background-color: rgb(48, 47, 47);
+    color: white;
+}
+
+.title {
+    color: #333333;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#enterprise .title {
+    color: white;
+}
+
+.subscription-type p {
+    font-size: 16px;
+    color: rgb(100, 100, 100);
+    margin-top: 0;
+}
+
+#enterprise .subscription-type p {
+    color: white;
+}
+
+.trial {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.trial button {
+    height: fit-content;
+    font-size: 15px;
+    background-color: rgb(203, 246, 219);
+    padding: 4px 12px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 14%;
+    margin-left: 8%;
+}
+
+.bill-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bill-info .bill {
+    width: 49%;
+    margin-top: 23%;
+    font-size: 20.5px;
+}
+
+.bill-info .price {
+    width: fit-content;
+    margin-bottom: 0%;
+}
+
+.bill-info .monthly-bill {
+    font-size: 20.5px;
+    margin-bottom: 11.5%;
+}
+
+.price {
+    font-size: 80px;
+}
+
+#team .button {
+    border: none;
+    background-color: #007bff;
+    color: white;
+}
+
+#team .bill {
+    margin-top: 29%;
+}
+
+#team .price {
+    margin-top: 21%;
+}
+
+#pro .price {
+    margin-top: 15%;
+}
+
+#pro #sales-team {
+    border-bottom: 2px solid rgb(217, 216, 216);
+    padding-bottom: 5px;
+}
+
+#pro .contact {
+    font-size: 18px;
+    color: grey;
+    text-align: center;
+    margin: 16% 0;
+}
+
+.button {
+    background-color: white;
+    color: rgb(88, 86, 86);
+    padding: 22px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 4px 2px;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.features {
+    list-style: none;
+    font-size: 18px;
+    padding: 0;
+    margin: 40% 0;
+}
+
+.features p {
+    font-size: 22px;
+}
+
+#pro .features {
+    margin-top: 0;
+}
+
+.features li {
+    margin-bottom: 10px;
+    line-height: 0.8;
+}
+
+.features li::before {
+    content: url(svg2.svg);
+    margin-right: 10px;
+    vertical-align: text-top;
+}
+
+#enterprise .features li::before {
+    content: url(svg3.svg);
+    margin-right: 10px;
+    vertical-align: text-top;
+}
+
+#enterprise .subscription-type::after {
+    display: block;
+    content: url(svg.svg);
+    margin-top: 28%;
+    margin-bottom: 33%;
+}
+
+@media (max-width: 1571px), (min-height: 1100px) {
+
+    .pricing-table {
+        display: block;
+    }
+
+    .column {
+        width: auto;
+        padding-left: 40px;
+        margin-bottom: 20px;
+        border-radius: 0;
+    }
+
+    #enterprise {
+        margin-bottom: 0;
+    }
+
+    .title {
+        font-size: calc(40px - 1vw);
+        font-weight: normal;
+    }
+
+    #enterprise .title::after {
+        content: " Scale"
+    }
+
+    .trial button {
+        display: none;
+    }
+
+    .subscription-type p {
+        font-size: calc(23px - 0.5vw);
+    }
+
+    .bill-info .monthly-bill {
+        display: none;
+    }
+
+    .bill-info {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        margin-bottom: calc(50px - 1vw);
+        margin-top: calc(50px - 1vw);
+    }
+
+    .bill-info .bill {
+        width: 180px;
+        margin-top: 5px;
+        margin-bottom: 0;
+        font-size: 20.5px;
+    }
+
+    .bill-info .price {
+        width: fit-content;
+        margin-right: 25px;
+    }
+
+    .price {
+        margin-top: 0;
+        margin-bottom: calc(45px - 1vw);
+        font-size: calc(70px - 1vw);
+        font-weight: normal;
+    }
+
+    #team .button {
+        border: 4px solid black;
+        background-color: white;
+        color: black;
+    }
+
+    #team .bill {
+        margin-top: 5px;
+    }
+
+    #team .price {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #pro .price {
+        margin-top: 0;
+    }
+
+    #pro .contact {
+        display: none;
+    }
+
+    #enterprise .subscription-type::after {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .button {
+        border-radius: 65px;
+        border: 4px solid black;
+        font-size: calc(26px - 0.5vw);
+        width: calc(225px - 0.5vw);
+        height: calc(100px - 0.5vh);
+    }
+
+    #enterprise .button {
+        border: none;
+        width: calc(255px - 0.5vw);
+    }
+
+    #enterprise .features {
+        color: white;
+    }
+
+    .features {
+        margin-top: 0;
+        margin-bottom: 50px;
+        font-size: calc(25px - 0.5vw);
+        color: #686767;
+    }
+
+    .features p {
+        font-size: calc(28px - 0.5vw);
+    }
+
+    .features li {
+        line-height: 1.5;
+    }
+
+    .features li::before {
+        content: url(svg2.svg);
+        vertical-align: middle;
+    }
+
+    .features::after {
+        /* add display: block to make the features respect the margins */
+        display: block;
+        content: "ALL FEATURES" url(svg4.svg);
+        font-size: 20px;
+        color: rgb(151, 151, 151);
+        margin-top: 40px;
+    }
+
+}

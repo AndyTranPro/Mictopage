@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.booking-form {
+    width: 96.5%;
+    height: 91.5%;
+    background: white;
+    padding: 28px;
+    box-shadow: 0.5px 2px 7px rgba(10, 5, 5, 0.559);
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    height: 55px;
+    font-size: 22px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #000;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: left;
+    background-position-x: 12px;
+    padding: 12px 2px 12px 40px;
+}
+
+.input-group input::placeholder {
+    padding-left: 2.5%;
+}
+
+#from {
+    background-image: url(./assets/icon4.png);
+    background-size: 25px;
+}
+
+#to {
+    background-image: url(./assets/icon3.png);
+    background-size: 25px;
+}
+
+/* border-width helps to adjust the distance between the border and the image */
+
+img {
+    position: absolute;
+    top: 15%;
+    right: 5.3%;
+    border-radius: 50%;
+    border: 2px solid white;
+    border-width: 10px;
+
+}
+
+.container {
+    display: flex;
+    margin-top: 1%;
+}
+
+.container .date {
+    width: 100%;
+}
+
+.container p {
+    padding-left: 7%;
+}
+
+#today {
+    background-image: url(./assets/icon2.png);
+}
+
+#return {
+    background-image: url(./assets/icon2.png);
+}
+
+#passenger {
+    background-image: url(./assets/icon1.png);
+    background-size: 20px;
+    background-position-x: 1px;
+}
+
+.route {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: rgba(14, 8, 8, 0.849);
+    margin: 5% 5% 0 0;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#passenger {
+    padding-left: 3.3%;
+}
+
+#go {
+    padding-right: 3%;
+}
+
+.input-group-2 input[type="text"] {
+    width: 100%;
+    height: 70%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: thin solid #ccc;
+    background-image: url(./assets/symbole-fleche-droite-rouge.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.input-group-2 input::placeholder {
+    font-size: 1.4em;
+    padding-left: 32px;
+}
+
+.pass {
+    margin-bottom: 3.5%;
+    height: 14%;
+}
+
+.class-selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.class-selection button {
+    border: none;
+    padding: 7px 22px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+#first-class {
+    position: relative;
+    right: -10px;
+}
+
+#second-class {
+    position: relative;
+    right: 5px;
+    background-color: black;
+    color: white;
+    z-index: 1;
+}
+
+.search-btn {
+    width: 100%;
+    background-color: #ff0000;
+    color: white;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .booking-form {
+        width: 95%;
+    }
+
+    .booking-form img {
+        right: 3em;
+    }
+
+    .input-group-2 .route p {
+        transform: translate(0.5em, 0);
+    }
+
+    .class-selection {
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 610px) {
+    .booking-form {
+        width: 94%;
+    }
+
+    .booking-form img {
+        right: 4em;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .container .route {
+        margin-top: 1.1em;
+    }
+
+    #go {
+        padding-right: 0;
+    }
+
+    .input-group-2 input[type="text"] {
+        padding-bottom: 0.8em;
+        height: 3em;
+    }
+
+    .container .input-group-2 {
+        height: 3.5em;
+        font-size: 0.9em;
+    }
+
+    .container p {
+        padding-left: 1.7em;
+    }
+
+    #passenger p {
+        padding-left: 1em;
+        font-size: 0.9em;
+    }
+
+    .pass {
+        height: 3em;
+    }
+
+    .input-group-2 input::placeholder {
+        padding-left: 2.4em;
+        font-size: 1.2em;
+    }
+
+    .class-selection {
+        margin-top: 2.5em;
+    }
+
+    .class-selection button {
+        font-size: 1em;
+    }
+}

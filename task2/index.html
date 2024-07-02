@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Train Booking Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="booking-form">
+        <div class="input-group">
+            <input type="text" id="from" placeholder="From" maxlength="10">
+        </div>
+        <div class="input-group">
+            <input type="text" id="to" placeholder="To" maxlength="10">
+        </div>
+        <img src="assets/icon5.png" alt="up-down arrow">
+        <div class="container">
+            <div class="input-group-2 date" id="go">
+                <div class="route" id="today">
+                    <p>Today, from 15:05</p>
+                </div>
+                <input type="text" placeholder="Change outbound route" maxlength="10">
+            </div>
+            <div class="input-group-2 date" id="back">
+                <div class="route" id="return">
+                    <p>Return journey</p>
+                </div>
+                <input type="text" placeholder="Add" maxlength="10">
+            </div>
+        </div>
+        <div class="input-group-2 pass">
+            <div class="route" id="passenger">
+                <p>Passenger</p>
+            </div>
+            <input type="text" placeholder="1 Person (aged 27-64), no discount" maxlength="10">
+        </div>
+        <div class="class-selection">
+            <button id="first-class">1st class</button>
+            <button id="second-class">2nd class</button>
+        </div>
+        <button class="search-btn">Search</button>
+    </div>
+</body>
+</html>

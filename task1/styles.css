@@ -1,0 +1,44 @@
+body {
+    font-family: Arial;
+    background-color: #09407a;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px;
+    padding-top: 40px;
+}
+  
+.card {
+    width: 30%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .small-heading {
+    font-weight: normal;
+    font-size: 180%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.card .description{
+    font-size: 110%;
+}
+
+.card .button {
+    padding-top: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding-left: 8px
+}

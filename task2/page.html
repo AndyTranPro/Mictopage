@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Train Ticket Booking</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    width: 1040px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+  }
+  .search-box {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+  }
+  .search-box > div {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .search-box label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .search-box input[type="text"] {
+    width: calc(100% - 40px); /* icon width + padding */
+    padding: 10px 20px 10px 40px; /* Make room for the icon */
+    border: 1px solid #ccc;
+  }
+  .search-box .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+  .search-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .search-box button:hover {
+    background-color: #c9302c;
+  }
+  .toggle-class {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .toggle-class button {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+  }
+  .toggle-class button.active {
+    background-color: #ddd;
+  }
+  .arrow-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="search-box">
+    <div>
+      <label for="from">From</label>
+      <img src="path/to/icon3.png" alt="" class="icon">
+      <input type="text" id="from" placeholder="Start location">
+    </div>
+    <div>
+      <label for="to">To</label>
+      <img src="path/to/icon4.png" alt="" class="icon">
+      <input type="text" id="to" placeholder="Destination">
+    </div>
+    <div>
+      <label>Today, from 15:05</label>
+      <button>Change outbound route <img src="path/to/icon1.png" alt="" class="arrow-icon"></button>
+    </div>
+    <div>
+      <label>Return journey</label>
+      <button>Add <img src="path/to/icon2.png" alt="" class="arrow-icon"></button>
+    </div>
+    <div>
+      <label>Passenger</label>
+      <button>1 Person (aged 27-64), no discount <img src="path/to/icon5.png" alt="" class="arrow-icon"></button>
+    </div>
+    <div class="toggle-class">
+      <button class="active">1st class</button>
+      <button>2nd class</button>
+    </div>
+    <button>Search</button>
+  </div>
+</div>
+</body>
+</html>
